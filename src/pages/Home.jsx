@@ -7,10 +7,10 @@ import Slider from "../components/Slider";
 const Home = () => {
   return (
     <>
-      <main className="bg-[#f2f0f1] px-[5%] lg:px-[8%] py-28">
+      <main className="bg-[#f2f0f1] px-[5%] lg:px-[8%] py-20 lg:py-28">
         <div className="2xl:container mx-auto relative flex">
-          <div className="w-3/5">
-            <h1 className="upppercase text-7xl font-bold">
+          <div className="lg:w-3/5">
+            <h1 className="upppercase text-5xl lg:text-7xl font-bold">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p className="text-lg mt-5">
@@ -26,17 +26,17 @@ const Home = () => {
                 Shop Now
               </Link>
             </div>
-            <div className="flex gap-10 mt-14">
-              <div>
-                <h3 className="font-semibold text-4xl">200+</h3>
+            <div className="flex gap-10 mt-14 flex-wrap justify-center lg:justify-start">
+              <div className="text-center">
+                <h3 className="font-semibold text-3xl lg:text-4xl">200+</h3>
                 <p className="text-gray-600 mt-1">International Brands</p>
               </div>
-              <div>
-                <h3 className="font-semibold text-4xl">2,000+</h3>
+              <div className="text-center">
+                <h3 className="font-semibold text-3xl lg:text-4xl">2,000+</h3>
                 <p className="text-gray-600 mt-1">High-Quality Products</p>
               </div>
-              <div>
-                <h3 className="font-semibold text-4xl">30,000+</h3>
+              <div className="text-center">
+                <h3 className="font-semibold text-3xl lg:text-4xl">30,000+</h3>
                 <p className="text-gray-600 mt-1">Happy Customers</p>
               </div>
             </div>
@@ -45,12 +45,12 @@ const Home = () => {
             <img
               src={star}
               alt=""
-              className="w-[50px] h-[50px] absolute left-2/3 top-1/3"
+              className="w-[50px] h-[50px] absolute left-0 lg:left-2/3 top-[450px] lg:top-1/3"
             />
             <img
               src={star}
               alt=""
-              className="w-[80px] h-[80px] absolute right-10 -top-10"
+              className="w-[80px] h-[80px] absolute right-10 top-[500px] hidden lg:block lg:-top-10"
             />
           </div>
         </div>
