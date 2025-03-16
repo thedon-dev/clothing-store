@@ -15,7 +15,7 @@ const Product = ({ name, rating, price, discountPrice, image }) => {
         <img src={image} alt="" className="object-cover" />
       </div>
       <div className="mt-3">
-        <h4 className="font-semibold text-xl">{name}</h4>
+        <h4 className="font-semibold text-xl lg:text-2xl">{name}</h4>
         <div className="flex gap-1 items-center my-2">
           <div className="flex">
             {Array(fullStars)

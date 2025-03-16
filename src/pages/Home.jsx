@@ -7,6 +7,7 @@ import Product from "../components/Product";
 import capPic from "../assets/CapPic.jpg";
 import Hoodie from "../assets/HoodiePic.jpg";
 import Jersey from "../assets/JerseyPic.jpg";
+import { BsArrowLeft } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -60,7 +61,7 @@ const Home = () => {
         </div>
       </main>
       <Slider />
-      <section className="px-[5%] lg:px-[10%] py-20 lg:py-32">
+      <section className="px-[5%] lg:px-[8%] py-20 lg:py-32">
         <div className="2xl:container mx-auto">
           <h1 className="uppercase text-4xl lg:text-5xl font-bold text-center">
             New Arrivals
@@ -97,6 +98,80 @@ const Home = () => {
             >
               View All{" "}
             </Link>
+          </div>
+        </div>
+      </section>
+      <section className="px-[5%] lg:px-[8%]">
+        <div className="2xl:container mx-auto py-20 lg:py-32 border-t">
+          <h1 className="uppercase text-4xl lg:text-5xl font-bold text-center">
+            Top Selling
+          </h1>
+          <div className="mt-20">
+            <div className="flex justify-between flex-col lg:flex-row gap-y-10">
+              <Product
+                image={capPic}
+                name={"Bucket Hat"}
+                rating={3.5}
+                price={2000}
+                discountPrice={0}
+              />
+              <Product
+                image={Hoodie}
+                name={"Hoodies"}
+                rating={4.5}
+                price={8000}
+                discountPrice={6000}
+              />
+              <Product
+                image={Jersey}
+                name={"Jersey"}
+                rating={3}
+                price={4000}
+                discountPrice={0}
+              />
+            </div>
+            <div className="mt-20 flex justify-center">
+              <Link
+                to="/newarrivals"
+                className="px-10 py-2 rounded-full border border-black text-lg font-semibold"
+              >
+                View All{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-[5%] lg:px-[8%]">
+        <div className="bg-[#f2f0f1] p-8 lg:p-20 rounded-lg">
+          <h1 className="uppercase text-4xl lg:text-5xl font-bold text-center">
+            browse by dress style
+          </h1>
+          <div className="grid grid-cols-1 lg:grid-cols-5 mt-10 gap-5">
+            <div className="relative p-4 h-[15rem] bg-white rounded w-full lg:col-span-2">
+              <h4 className="text-2xl font-semibold">Casual</h4>
+              <img src="" alt="" className="absolute" />
+            </div>
+            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-3">
+              <h4 className="text-2xl font-semibold">Formal</h4>
+            </div>
+            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-3">
+              <h4 className="text-2xl font-semibold">Party</h4>
+            </div>
+            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-2">
+              <h4 className="text-2xl font-semibold">Gym</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-[5%] lg:px-[8%] py-20 lg:py-32">
+        <div>
+          <div>
+            <h1>our happy customers</h1>
+            <div>
+              <button>
+                <BsArrowLeft />
+              </button>
+            </div>
           </div>
         </div>
       </section>
