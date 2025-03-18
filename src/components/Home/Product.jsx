@@ -1,6 +1,5 @@
 import React from "react";
 import { FaStar, FaStarHalf } from "react-icons/fa";
-import capPic from "../assets/CapPic.jpg";
 
 const Product = ({ name, rating, price, discountPrice, image }) => {
   const fullStars = Math.floor(rating);

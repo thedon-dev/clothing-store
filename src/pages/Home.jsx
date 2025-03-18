@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import star from "../assets/Star.png";
 import model from "../assets/shopping_illustration.png";
-import Slider from "../components/Slider";
-import Product from "../components/Product";
+import Slider from "../components/Home/Slider";
+import Product from "../components/Home/Product";
 import capPic from "../assets/CapPic.jpg";
 import Hoodie from "../assets/HoodiePic.jpg";
 import Jersey from "../assets/JerseyPic.jpg";
-import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import CustomerCarousel from "../components/Home/CustomerCarousel";
 
 const Home = () => {
   return (
@@ -67,7 +68,7 @@ const Home = () => {
             New Arrivals
           </h1>
           <div className="mt-20">
-            <div className="flex justify-between flex-col lg:flex-row gap-y-10">
+            <div className="flex justify-between flex-col lg:flex-row flex-wrap gap-y-10">
               <Product
                 image={capPic}
                 name={"Bucket Hat"}
@@ -107,7 +108,7 @@ const Home = () => {
             Top Selling
           </h1>
           <div className="mt-20">
-            <div className="flex justify-between flex-col lg:flex-row gap-y-10">
+            <div className="flex justify-between flex-col lg:flex-row flex-wrap gap-y-10">
               <Product
                 image={capPic}
                 name={"Bucket Hat"}
@@ -164,14 +165,23 @@ const Home = () => {
         </div>
       </section>
       <section className="px-[5%] lg:px-[8%] py-20 lg:py-32">
-        <div>
-          <div>
-            <h1>our happy customers</h1>
-            <div>
-              <button>
-                <BsArrowLeft />
+        <div></div>
+        <div className="2xl:container mx-auto">
+          <div className="flex">
+            <h1 className="text-3xl lg:text-4xl font-extrabold uppercase">
+              our happy customers
+            </h1>
+            {/* <div className="flex gap-5 items-center">
+              <button className="p-2 cursor-pointer">
+                <BsArrowLeft size={25} />
               </button>
-            </div>
+              <button className="p-2 cursor-pointer">
+                <BsArrowRight size={25} />
+              </button>
+            </div> */}
+          </div>
+          <div className="mt-10">
+            <CustomerCarousel />
           </div>
         </div>
       </section>

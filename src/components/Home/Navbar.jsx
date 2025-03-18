@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BiCart, BiSearch } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import { FaBarsProgress, FaBarsStaggered } from "react-icons/fa6";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { Link, useNavigate } from "react-router-dom";
 

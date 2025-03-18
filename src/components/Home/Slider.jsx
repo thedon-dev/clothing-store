@@ -1,9 +1,9 @@
 import React from "react";
-import versace from "../assets/versace.png";
-import zara from "../assets/zara-logo-1 1.png";
-import gucci from "../assets/gucci_logo.png";
-import prada from "../assets/prada_logo.png";
-import calvinklien from "../assets/calvin-klein.png";
+import versace from "../../assets/versace.png";
+import zara from "../../assets/zara-logo-1 1.png";
+import gucci from "../../assets/gucci_logo.png";
+import prada from "../../assets/prada_logo.png";
+import calvinklien from "../../assets/calvin-klein.png";
 import Marquee from "react-marquee-slider";
 
 const Slider = () => {
