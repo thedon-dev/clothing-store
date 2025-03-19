@@ -7,6 +7,10 @@ import Product from "../components/Home/Product";
 import capPic from "../assets/CapPic.jpg";
 import Hoodie from "../assets/HoodiePic.jpg";
 import Jersey from "../assets/JerseyPic.jpg";
+import formalOutfit from "../assets/FormalOutfit.jpg";
+import gymOutfit from "../assets/GymOutfit.jpg";
+import partyOutfit from "../assets/partyOutfit.jpg";
+
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import CustomerCarousel from "../components/Home/CustomerCarousel";
 
@@ -68,7 +72,7 @@ const Home = () => {
             New Arrivals
           </h1>
           <div className="mt-20">
-            <div className="flex justify-between flex-col lg:flex-row flex-wrap gap-y-10">
+            <div className="flex gap-10 justify-between overflow-scroll scrollNone">
               <Product
                 image={capPic}
                 name={"Bucket Hat"}
@@ -108,7 +112,7 @@ const Home = () => {
             Top Selling
           </h1>
           <div className="mt-20">
-            <div className="flex justify-between flex-col lg:flex-row flex-wrap gap-y-10">
+            <div className="flex justify-between flex-row overflow-scroll gap-10 scrollNone">
               <Product
                 image={capPic}
                 name={"Bucket Hat"}
@@ -148,18 +152,73 @@ const Home = () => {
             browse by dress style
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-5 mt-10 gap-5">
-            <div className="relative p-4 h-[15rem] bg-white rounded w-full lg:col-span-2">
+            <div className="relative p-4 h-[15rem] bg-white rounded-md w-full lg:col-span-2 flex gap-5">
               <h4 className="text-2xl font-semibold">Casual</h4>
-              <img src="" alt="" className="absolute" />
+              <div
+                className="overflow-hidden rounded-lg h-full w-full"
+                style={{
+                  backgroundImage: `url(${formalOutfit})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                {/* <img
+                  src={formalOutfit}
+                  alt=""
+                  className="object-cover bg-center"
+                /> */}
+              </div>
             </div>
-            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-3">
+            <div className="relative p-4 h-[15rem] bg-white rounded-md lg:col-span-3 flex gap-5">
               <h4 className="text-2xl font-semibold">Formal</h4>
+              <div
+                className="overflow-hidden rounded-lg h-full w-full"
+                style={{
+                  backgroundImage: `url(${formalOutfit})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                {/* <img
+                  src={formalOutfit}
+                  alt=""
+                  className="object-cover bg-center"
+                /> */}
+              </div>
             </div>
-            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-3">
+            <div className="relative p-4 h-[15rem] bg-white rounded-md lg:col-span-3 flex gap-5">
               <h4 className="text-2xl font-semibold">Party</h4>
+              <div
+                className="overflow-hidden rounded-lg h-full w-full"
+                style={{
+                  backgroundImage: `url(${partyOutfit})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                {/* <img
+                  src={formalOutfit}
+                  alt=""
+                  className="object-cover bg-center"
+                /> */}
+              </div>
             </div>
-            <div className="relative p-4 h-[15rem] bg-white rounded lg:col-span-2">
+            <div className="relative p-4 h-[15rem] bg-white rounded-md lg:col-span-2 flex gap-5">
               <h4 className="text-2xl font-semibold">Gym</h4>
+              <div
+                className="overflow-hidden rounded-lg h-full w-full"
+                style={{
+                  backgroundImage: `url(${gymOutfit})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                {/* <img
+                  src={formalOutfit}
+                  alt=""
+                  className="object-cover bg-center"
+                /> */}
+              </div>
             </div>
           </div>
         </div>

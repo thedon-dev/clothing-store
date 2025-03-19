@@ -8,7 +8,9 @@ const Header = () => {
         <p className="text-center">
           Sign up and get 20% off to your first order.
         </p>
-        <Link className="underline">Sign Up Now</Link>
+        <Link to="/signup" className="underline">
+          Sign Up Now
+        </Link>
       </div>
     </header>
   );

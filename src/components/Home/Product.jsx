@@ -10,7 +10,7 @@ const Product = ({ name, rating, price, discountPrice, image }) => {
     : 0;
   return (
     <div className="">
-      <div className="w-full lg:w-[350px] h-[350px] overflow-hidden rounded">
+      <div className="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] overflow-hidden rounded">
         <img src={image} alt="" className="object-cover" />
       </div>
       <div className="mt-3">
