@@ -9,7 +9,7 @@ import Hoodie from "../assets/HoodiePic.jpg";
 import Jersey from "../assets/JerseyPic.jpg";
 import formalOutfit from "../assets/FormalOutfit.jpg";
 import gymOutfit from "../assets/GymOutfit.jpg";
-import partyOutfit from "../assets/partyOutfit.jpg";
+import partyOutfit from "../assets/PartyOutfit.jpg";
 
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import CustomerCarousel from "../components/Home/CustomerCarousel";
