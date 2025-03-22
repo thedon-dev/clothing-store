@@ -5,6 +5,7 @@ import Header from "./components/Home/Header";
 import Footer from "./components/Footer";
 import LoginPage from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import NavigationPointer from "./components/NavigationPointer";
 
 function App() {
   return (
