@@ -92,7 +92,7 @@ const Navbar = () => {
             ref={navRef}
             className={`${
               navOpen ? "left-0" : "-left-[100%] lg:left-0"
-            } top-0 bg-white h-screen lg:h-fit w-2/3 px-5 lg:px-0 fixed lg:relative flex flex-col lg:flex-row lg:w-full justify-center lg:justify-between lg:items-center z-50 transition-all duration-300`}
+            } top-0 bg-white h-screen lg:h-fit w-2/3 px-5 lg:px-0 fixed lg:relative flex flex-col lg:flex-row lg:w-full justify-center lg:justify-between lg:items-center z-50 transition-all duration-300 bg-50`}
           >
             <h2 className="font-extrabold text-4xl uppercase text-start lg:hidden">
               Shop.Co
@@ -142,10 +142,10 @@ const Navbar = () => {
                 className="focus:outline-none w-full text-sm lg:text-base hidden"
               />
             </div>
-            <Link to="" className="">
+            <Link to="/cart" className="">
               <BiCart className="w-[30px] h-[30px]" />
             </Link>
-            <Link to="" className="">
+            <Link to="/profile" className="">
               <CgProfile className="w-[25px] h-[25px]" />
             </Link>
           </div>

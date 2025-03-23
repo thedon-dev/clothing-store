@@ -95,12 +95,12 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="relative mt-20 lg:mt-0 pt-60 pb-20 px-[5%] lg:px-[10%] bg-[#f0f0f0]">
-      <div className="absolute w-[90%] lg:w-[80%] rounded-lg text-white bg-black flex flex-col lg:felx-row -top-24 p-8 justify-between">
+    <footer className="relative mt-20 lg:mt-0 pt-60 lg:pt-48 pb-20 px-[5%] lg:px-[10%] bg-[#f0f0f0]">
+      <div className="absolute w-[90%] lg:w-[80%] rounded-lg text-white bg-black flex flex-col lg:flex-row -top-24 p-8 lg:p-10 justify-between">
         <h1 className="uppercase text-2xl lg:text-5xl font-bold lg:w-2/3">
           STAY UPTO DATE ABOUT OUR LATEST OFFERS
         </h1>
-        <div className="flex flex-col gap-3 mt-5 lg:w-1/3">
+        <div className="flex flex-col gap-3 mt-5 lg:mt-0 lg:w-1/3">
           <div className="bg-white rounded-full flex gap-3 items-center p-3">
             <div>
               <FiMail color="black" />
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-5 flex-col lg:flex-row">
-        <div className="lg;w-2/5">
+        <div className="lg:w-2/5">
           <h1 className="uppercase text-5xl font-extrabold">Shop.Co</h1>
           <p className="mt-3">
             We have clothes that suits your style and which you’re proud to
