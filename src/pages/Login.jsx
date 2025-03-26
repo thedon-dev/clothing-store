@@ -39,9 +39,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-black">
+      <h1 className="text-6xl font-extrabold text-white">Shop.Co</h1>
       <ScatteredText />
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md z-50">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md z-50 mt-20">
         <h2 className="text-2xl font-bold text-center">
           Login to Your Account
         </h2>
